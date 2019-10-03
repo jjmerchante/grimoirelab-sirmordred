@@ -61,14 +61,14 @@ class TaskEnrich(Task):
         self.clean = False
         # check whether the aliases has beed already created
         self.enrich_aliases = False
-        self.sh_kwargs = {'user': self.db_user, 'password': self.db_password,
-                          'database': self.db_sh, 'host': self.db_host,
-                          'port': None}
-        self.db = Database(**self.sh_kwargs)
+        if self.use_sortinghat:
+            self.sh_kwargs = {'user': self.db_user, 'password': self.db_password,
+                              'database': self.db_sh, 'host': self.db_host,
+                              'port': None}
+            self.db = Database(**self.sh_kwargs)
         autorefresh_interval = self.conf['es_enrichment']['autorefresh_interval']
         self.last_autorefresh = self.__update_last_autorefresh(days=autorefresh_interval)
         self.last_autorefresh_studies = self.last_autorefresh
-        self.last_sortinghat_import = None
 
     def select_aliases(self, cfg, backend_section):
 
@@ -169,6 +169,11 @@ class TaskEnrich(Task):
             logger.info('[%s] enrichment starts for %s', self.backend_section, repo)
             es_enrich_aliases = self.select_aliases(cfg, self.backend_section)
 
+            if self.use_sortinghat:
+                unaffiliated_grp = cfg['sortinghat']['unaffiliated_group']
+            else:
+                unaffiliated_grp = None
+
             try:
                 es_col_url = self._get_collection_url()
                 enrich_backend(es_col_url, self.clean, backend, backend_args,
@@ -177,16 +182,16 @@ class TaskEnrich(Task):
                                cfg[self.backend_section]['enriched_index'],
                                None,  # projects_db is deprecated
                                cfg['projects']['projects_file'],
-                               cfg['sortinghat']['database'],
+                               self.db_sh,
                                no_incremental, only_identities,
                                github_token,
                                False,  # studies are executed in its own Task
                                only_studies,
                                cfg['es_enrichment']['url'],
                                None,  # args.events_enrich
-                               cfg['sortinghat']['user'],
-                               cfg['sortinghat']['password'],
-                               cfg['sortinghat']['host'],
+                               self.db_user,
+                               self.db_password,
+                               self.db_host,
                                None,  # args.refresh_projects,
                                None,  # args.refresh_identities,
                                author_id=None,
@@ -194,7 +199,7 @@ class TaskEnrich(Task):
                                filter_raw=filter_raw,
                                filters_raw_prefix=filters_raw_prefix,
                                jenkins_rename_file=jenkins_rename_file,
-                               unaffiliated_group=cfg['sortinghat']['unaffiliated_group'],
+                               unaffiliated_group=unaffiliated_grp,
                                pair_programming=pair_programming,
                                node_regex=node_regex,
                                studies_args=studies_args,
@@ -413,8 +418,9 @@ class TaskEnrich(Task):
                              self.conf[self.backend_section]['enriched_index'])
             logger.info('[%s] data retention end', self.backend_section)
 
-            self.retain_identities(retention_time)
-            logger.info('[%s] identities retention end', self.backend_section)
+            if self.use_sortinghat:
+                self.retain_identities(retention_time)
+                logger.info('[%s] identities retention end', self.backend_section)
 
             autorefresh = cfg['es_enrichment']['autorefresh']
 

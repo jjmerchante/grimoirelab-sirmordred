@@ -44,10 +44,18 @@ class Task():
         self.backend_section = None
         self.config = config
         self.conf = config.get_conf()
-        self.db_sh = self.conf['sortinghat']['database']
-        self.db_user = self.conf['sortinghat']['user']
-        self.db_password = self.conf['sortinghat']['password']
-        self.db_host = self.conf['sortinghat']['host']
+        self.use_sortinghat = 'sortinghat' in self.conf
+        if self.use_sortinghat:
+            self.db_sh = self.conf['sortinghat']['database']
+            self.db_user = self.conf['sortinghat']['user']
+            self.db_password = self.conf['sortinghat']['password']
+            self.db_host = self.conf['sortinghat']['host']
+        else:
+            self.db_sh = None
+            self.db_user = None
+            self.db_password = None
+            self.db_host = None
+
         self.grimoire_con = grimoire_con(conn_retries=12)  # 30m retry
 
     @staticmethod
