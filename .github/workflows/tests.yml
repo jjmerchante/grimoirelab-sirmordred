@@ -57,7 +57,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        poetry install -vvv
+        poetry install --without grimoirelab -vvv
         poetry add -D coveralls
         poetry run pip install -r requirements_dev.txt
 

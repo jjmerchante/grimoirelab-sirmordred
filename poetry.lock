@@ -2,7 +2,7 @@
 name = "astroid"
 version = "2.11.7"
 description = "An abstract syntax tree for Python with inference support."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.2"
 
@@ -17,7 +17,7 @@ wrapt = ">=1.11,<2"
 name = "bandit"
 version = "1.7.4"
 description = "Security oriented static analyser for python code."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -36,7 +36,7 @@ yaml = ["PyYAML"]
 name = "beautifulsoup4"
 version = "4.11.1"
 description = "Screen-scraping library"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.0"
 
@@ -51,7 +51,7 @@ lxml = ["lxml"]
 name = "cereslib"
 version = "0.3.3"
 description = "GrimoireLab: Unify, eventize and enrich information from Perceval"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 
@@ -66,7 +66,7 @@ six = ">=1.16.0,<2.0.0"
 name = "certifi"
 version = "2022.9.24"
 description = "Python package for providing Mozilla's CA Bundle."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -74,7 +74,7 @@ python-versions = ">=3.6"
 name = "cffi"
 version = "1.15.1"
 description = "Foreign Function Interface for Python calling C code."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -85,7 +85,7 @@ pycparser = "*"
 name = "charset-normalizer"
 version = "2.1.1"
 description = "The Real First Universal Charset Detector. Open, modern and actively maintained alternative to Chardet."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.0"
 
@@ -96,7 +96,7 @@ unicode_backport = ["unicodedata2"]
 name = "cloc"
 version = "0.2.5"
 description = "Command Line Object Chaining (cloc) - Modern cli framework for simple and complex cli applications"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -116,7 +116,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7
 name = "colored"
 version = "1.4.3"
 description = "Simple library for color and formatting to terminal"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -146,7 +146,7 @@ toml = ["tomli"]
 name = "cryptography"
 version = "3.4.8"
 description = "cryptography is a package which provides cryptographic recipes and primitives to Python developers."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -165,7 +165,7 @@ test = ["hypothesis (>=1.11.4,!=3.79.2)", "iso8601", "pretend", "pytest (>=6.0)"
 name = "dill"
 version = "0.3.6"
 description = "serialize all of python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -176,7 +176,7 @@ graph = ["objgraph (>=1.7.2)"]
 name = "dulwich"
 version = "0.20.46"
 description = "Python Git Library"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -224,7 +224,7 @@ develop = ["coverage (<5.0.0)", "mock", "pytest (>=3.0.0)", "pytest-cov", "pytz"
 name = "execnet"
 version = "1.9.0"
 description = "execnet: rapid multi-Python deployment"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -235,7 +235,7 @@ testing = ["pre-commit"]
 name = "feedparser"
 version = "6.0.10"
 description = "Universal feed parser, handles RSS 0.9x, RSS 1.0, RSS 2.0, CDF, Atom 0.3, and Atom 1.0 feeds"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -254,7 +254,7 @@ python-versions = "*"
 name = "flake8"
 version = "4.0.1"
 description = "the modular source code checker: pep8 pyflakes and co"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -268,7 +268,7 @@ pyflakes = ">=2.4.0,<2.5.0"
 name = "geographiclib"
 version = "1.52"
 description = "The geodesic routines from GeographicLib"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -276,7 +276,7 @@ python-versions = "*"
 name = "geopy"
 version = "2.2.0"
 description = "Python Geocoding Toolbox"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -296,7 +296,7 @@ timezone = ["pytz"]
 name = "gitdb"
 version = "4.0.9"
 description = "Git Object Database"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -307,7 +307,7 @@ smmap = ">=3.0.1,<6"
 name = "GitPython"
 version = "3.1.29"
 description = "GitPython is a python library used to interact with Git repositories"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -319,7 +319,7 @@ typing-extensions = {version = ">=3.7.4.3", markers = "python_version < \"3.8\""
 name = "graal"
 version = "0.4.0"
 description = "A generic source code analyzer"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 
@@ -339,7 +339,7 @@ pylint = ">=1.8.4"
 name = "grimoire-elk"
 version = "0.103.1"
 description = "GrimoireELK processes and stores software development data to ElasticSearch"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 
@@ -366,7 +366,7 @@ urllib3 = ">=1.26,<2.0"
 name = "grimoirelab-panels"
 version = "0.1.1"
 description = "Panels and visualizations for GrimoireLab dashboards"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 
@@ -374,7 +374,7 @@ python-versions = ">=3.7,<4.0"
 name = "grimoirelab-toolkit"
 version = "0.3.2rc1"
 description = "Toolkit of common functions used across GrimoireLab"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 
@@ -393,7 +393,7 @@ python-versions = ">=3"
 name = "idna"
 version = "3.4"
 description = "Internationalized Domain Names in Applications (IDNA)"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5"
 
@@ -401,7 +401,7 @@ python-versions = ">=3.5"
 name = "importlib-metadata"
 version = "4.2.0"
 description = "Read metadata from Python packages"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -417,7 +417,7 @@ testing = ["flufl.flake8", "importlib-resources (>=1.3)", "packaging", "pep517",
 name = "isort"
 version = "5.10.1"
 description = "A Python utility / library to sort Python imports."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.1,<4.0"
 
@@ -431,7 +431,7 @@ requirements_deprecated_finder = ["pip-api", "pipreqs"]
 name = "Jinja2"
 version = "3.1.2"
 description = "A very fast and expressive template engine."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -445,7 +445,7 @@ i18n = ["Babel (>=2.7)"]
 name = "kidash"
 version = "0.5.2rc1"
 description = "GrimoireLab script to manage Kibana dashboards from the command line"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 
@@ -458,7 +458,7 @@ urllib3 = ">=1.26,<2.0"
 name = "lazy-object-proxy"
 version = "1.7.1"
 description = "A fast and thorough lazy object proxy."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -466,7 +466,7 @@ python-versions = ">=3.6"
 name = "lizard"
 version = "1.16.6"
 description = "A code analyzer without caring the C/C++ header files. It works with Java, C/C++, JavaScript, Python, Ruby, Swift, Objective C. Metrics includes cyclomatic complexity number etc."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -474,7 +474,7 @@ python-versions = "*"
 name = "MarkupSafe"
 version = "2.1.1"
 description = "Safely add untrusted strings to HTML/XML markup."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -482,7 +482,7 @@ python-versions = ">=3.7"
 name = "mccabe"
 version = "0.6.1"
 description = "McCabe checker, plugin for flake8"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -490,7 +490,7 @@ python-versions = "*"
 name = "networkx"
 version = "2.6.3"
 description = "Python package for creating and manipulating graphs and networks"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -505,7 +505,7 @@ test = ["codecov (>=2.1)", "pytest (>=6.2)", "pytest-cov (>=2.12)"]
 name = "numpy"
 version = "1.21.0"
 description = "NumPy is the fundamental package for array computing with Python."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -513,7 +513,7 @@ python-versions = ">=3.7"
 name = "packaging"
 version = "21.3"
 description = "Core utilities for Python packages"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -524,7 +524,7 @@ pyparsing = ">=2.0.2,<3.0.5 || >3.0.5"
 name = "pandas"
 version = "0.25.3"
 description = "Powerful data structures for data analysis, time series, and statistics"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.5.3"
 
@@ -540,7 +540,7 @@ test = ["hypothesis (>=3.58)", "pytest (>=4.0.2)", "pytest-xdist"]
 name = "patsy"
 version = "0.5.3"
 description = "A Python package for describing statistical models and for building design matrices."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -555,7 +555,7 @@ test = ["pytest", "pytest-cov", "scipy"]
 name = "pbr"
 version = "5.11.0"
 description = "Python Build Reasonableness"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.6"
 
@@ -563,7 +563,7 @@ python-versions = ">=2.6"
 name = "perceval"
 version = "0.21.0rc1"
 description = "Send Sir Perceval on a quest to fetch and gather data from software repositories."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 
@@ -585,7 +585,7 @@ docs = ["furo (>=2021.8.31,<2022.0.0)", "myst-parser (>=0.15.2,<0.16.0)"]
 name = "perceval-mozilla"
 version = "0.3.4rc1"
 description = "Bundle of Perceval backends for Mozilla ecosystem."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 
@@ -598,7 +598,7 @@ requests = ">=2.7.0,<3.0.0"
 name = "perceval-opnfv"
 version = "0.2.4rc1"
 description = "Bundle of Perceval backends for OPNFV ecosystem."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 
@@ -611,7 +611,7 @@ requests = ">=2.7.0,<3.0.0"
 name = "perceval-puppet"
 version = "0.2.4rc1"
 description = "Bundle of Perceval backends for Puppet, Inc. ecosystem."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 
@@ -624,7 +624,7 @@ requests = ">=2.7.0,<3.0.0"
 name = "perceval-weblate"
 version = "0.2.4rc1"
 description = "Bundle of Perceval backends for Weblate."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 
@@ -637,7 +637,7 @@ requests = ">=2.7.0,<3.0.0"
 name = "platformdirs"
 version = "2.5.2"
 description = "A small Python module for determining appropriate platform-specific dirs, e.g. a \"user data dir\"."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -649,7 +649,7 @@ test = ["appdirs (==1.4.4)", "pytest (>=6)", "pytest-cov (>=2.7)", "pytest-mock 
 name = "pycodestyle"
 version = "2.8.0"
 description = "Python style guide checker"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 
@@ -657,7 +657,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
 name = "pycparser"
 version = "2.21"
 description = "C parser in Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -665,7 +665,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 name = "pydot"
 version = "1.4.2"
 description = "Python interface to Graphviz's Dot"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -676,7 +676,7 @@ pyparsing = ">=2.1.4"
 name = "pyflakes"
 version = "2.4.0"
 description = "passive checker of Python programs"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -684,7 +684,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 name = "PyJWT"
 version = "2.6.0"
 description = "JSON Web Token implementation in Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -698,7 +698,7 @@ tests = ["coverage[toml] (==5.0.4)", "pytest (>=6.0.0,<7.0.0)"]
 name = "pylint"
 version = "2.13.9"
 description = "python code static checker"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.2"
 
@@ -719,7 +719,7 @@ testutil = ["gitpython (>3)"]
 name = "PyMySQL"
 version = "1.0.2"
 description = "Pure Python MySQL Driver"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -731,7 +731,7 @@ rsa = ["cryptography"]
 name = "pyparsing"
 version = "3.0.9"
 description = "pyparsing module - Classes and methods to define and execute parsing grammars"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6.8"
 
@@ -753,7 +753,7 @@ six = ">=1.5"
 name = "pytz"
 version = "2022.5"
 description = "World timezone definitions, modern and historical"
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -761,7 +761,7 @@ python-versions = "*"
 name = "PyYAML"
 version = "6.0"
 description = "YAML parser and emitter for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -769,7 +769,7 @@ python-versions = ">=3.6"
 name = "requests"
 version = "2.28.1"
 description = "Python HTTP for Humans."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7, <4"
 
@@ -787,7 +787,7 @@ use_chardet_on_py3 = ["chardet (>=3.0.2,<6)"]
 name = "scipy"
 version = "1.6.1"
 description = "SciPy: Scientific Library for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -798,7 +798,7 @@ numpy = ">=1.16.5"
 name = "setuptools"
 version = "65.5.0"
 description = "Easily download, build, install, upgrade, and uninstall Python packages"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -811,7 +811,7 @@ testing-integration = ["build[virtualenv]", "filelock (>=3.4.0)", "jaraco.envs (
 name = "sgmllib3k"
 version = "1.0.0"
 description = "Py3k port of sgmllib."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "*"
 
@@ -827,7 +827,7 @@ python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*"
 name = "smmap"
 version = "5.0.0"
 description = "A pure Python implementation of a sliding window memory map manager"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -835,7 +835,7 @@ python-versions = ">=3.6"
 name = "sortinghat"
 version = "0.7.21"
 description = "A tool to manage identities."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7,<4.0"
 
@@ -854,7 +854,7 @@ urllib3 = ">=1.22,<2.0"
 name = "soupsieve"
 version = "2.3.2.post1"
 description = "A modern CSS selector implementation for Beautiful Soup."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -862,7 +862,7 @@ python-versions = ">=3.6"
 name = "SQLAlchemy"
 version = "1.3.24"
 description = "Database Abstraction Library"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
 
@@ -882,7 +882,7 @@ pymysql = ["pymysql", "pymysql (<1)"]
 name = "statsmodels"
 version = "0.13.2"
 description = "Statistical computations and models for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -902,7 +902,7 @@ docs = ["ipykernel", "jupyter_client", "matplotlib", "nbconvert", "nbformat", "n
 name = "stevedore"
 version = "3.5.2"
 description = "Manage dynamic plugins for Python applications"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -914,7 +914,7 @@ pbr = ">=2.0.0,<2.1.0 || >2.1.0"
 name = "tomli"
 version = "2.0.1"
 description = "A lil' TOML parser"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -922,7 +922,7 @@ python-versions = ">=3.7"
 name = "typed-ast"
 version = "1.5.4"
 description = "a fork of Python 2 and 3 ast modules with type comment support"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 
@@ -930,7 +930,7 @@ python-versions = ">=3.6"
 name = "typing-extensions"
 version = "4.4.0"
 description = "Backported and Experimental Type Hints for Python 3.7+"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -951,7 +951,7 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 name = "wrapt"
 version = "1.14.1"
 description = "Module for decorators, wrappers and monkey patching."
-category = "main"
+category = "dev"
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 
@@ -959,7 +959,7 @@ python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,>=2.7"
 name = "zipp"
 version = "3.10.0"
 description = "Backport of pathlib-compatible object wrapper for zip files"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.7"
 
@@ -970,7 +970,7 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.7.1"
-content-hash = "93dada43066206b27b5bc5b64bf74f2b0f515c93a59e9076097bd3cb5b786084"
+content-hash = "71eff0a904e64f9a6d3bd59bb5217610f29901376da7b4fd2451079cae207466"
 
 [metadata.files]
 astroid = [

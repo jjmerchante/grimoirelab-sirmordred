@@ -47,6 +47,8 @@ colorlog = "4.1.0"
 elasticsearch = "6.3.1"
 elasticsearch-dsl = "6.3.1"
 file-read-backwards = "2.0.0"
+
+[tool.poetry.group.grimoirelab.dependencies]
 grimoirelab-toolkit = { version = ">=0.3", allow-prereleases = true}
 sortinghat = { version = ">=0.7.20", allow-prereleases = true}
 kidash = { version = ">=0.5", allow-prereleases = true}
@@ -60,7 +62,7 @@ perceval-weblate = { version = ">=0.2", allow-prereleases = true}
 cereslib = { version = ">=0.3", allow-prereleases = true}
 graal = { version = ">=0.3", allow-prereleases = true}
 
-[tool.poetry.dev-dependencies]
+[tool.poetry.group.dev.dependencies]
 httpretty = "^1.1.4"
 flake8 = "^4.0.1"
 coverage = "^6.3.2"
