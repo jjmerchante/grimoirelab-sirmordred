@@ -12,7 +12,7 @@ on:
 
 jobs:
   tests:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     services:
       # How to use MySQL
       mysql:
@@ -22,12 +22,19 @@ jobs:
         ports:
           - 3306:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
-    
+
+    # Redis
+      redis:
+        image: redis
+        ports:
+          - 6379:6379
+        options: --health-cmd="redis-cli ping" --health-interval 10s --health-timeout 5s --health-retries 5
+
     name: Python ${{ matrix.python-version }} for ES ${{ matrix.elasticsearch-version }}
     strategy:
       matrix:
         python-version: [3.7, 3.8]
-        elasticsearch-version: [6.8.6]
+        elasticsearch-version: [6.8.6, 7.2.0]
     
     steps:
     - name: Checkout
@@ -70,7 +77,27 @@ jobs:
     - name: Verify Elasticsearch connection
       run: |
         curl -fsSL "http://localhost:9200/_cat/health?h=status"
-      
+
+    - name: Setup MySQL Database
+      env:
+        DB_HOST: 127.0.0.1
+        DB_PORT: ${{ job.services.mysql.ports[3306] }}
+      run: |
+        mysql --host $DB_HOST --port $DB_PORT -uroot -proot -e "CREATE DATABASE test_sh"
+
+    - name: Run Sortinghat Server
+      env:
+        SORTINGHAT_SECRET_KEY: my-secret-key
+        SORTINGHAT_DB_PASSWORD: root
+        SORTINGHAT_SUPERUSER_USERNAME: root
+        SORTINGHAT_SUPERUSER_PASSWORD: 
+      run: |
+        git clone --single-branch https://github.com/chaoss/grimoirelab-sortinghat /tmp/sortinghat
+        cd /tmp/sortinghat
+        poetry install -vvv
+        poetry run sortinghat-admin --config sortinghat.config.settings setup
+        poetry run sortinghatd --config sortinghat.config.settings --dev &
+
     - name: Lint with flake8
       run: |
         poetry run flake8
