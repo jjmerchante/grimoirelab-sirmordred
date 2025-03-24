@@ -401,7 +401,7 @@ class TaskPanels(Task):
         es_enrich = self.conf['es_enrichment']['url']
         kibana_url = self.conf['panels']['kibiter_url']
 
-        mboxes_sources = set(['pipermail', 'hyperkitty', 'groupsio', 'nntp'])
+        mboxes_sources = set(['pipermail', 'hyperkitty', 'groupsio'])
         if data_sources and any(x in data_sources for x in mboxes_sources):
             data_sources = list(data_sources)
             data_sources.append('mbox')

@@ -191,7 +191,7 @@ raw index but it will enriched in the enriched index.
 
 ## Supported data sources [&uarr;](#contents)
 
-These are the data sources GrimoireLab supports: [askbot](#askbot-), [bugzilla](#bugzilla-), [bugzillarest](#bugzillarest-), [cocom](#cocom-), [colic](#colic-), [confluence](#confluence-), [crates](#crates-), [discourse](#discourse-), [dockerhub](#dockerhub-), [dockerdeps](#dockerdeps-), [dockersmells](#dockersmells-), [functest](#functest-), [gerrit](#gerrit-), [git](#git-), [github](#github-), [github2](#github2-), [gitlab](#gitlab-), [gitter](#gitter-), [google_hits](#google_hits-), [groupsio](#groupsio-), [hyperkitty](#hyperkitty-), [jenkins](#jenkins-), [jira](#jira-), [kitsune](#kitsune-), [mattermost](#mattermost-), [mbox](#mbox-), [mediawiki](#mediawiki-), [meetup](#meetup-), [mozillaclub](#mozillaclub-), [nntp](#nntp-), [pagure](#pagure-), [phabricator](#phabricator-), [pipermail](#pipermail-), [puppetforge](#puppetforge-), [redmine](#redmine-), [remo](#remo-), [rocketchat](#rocketchat-), [rss](#rss-), [slack](#slack-), [stackexchange](#stackexchange-), [supybot](#supybot-), [telegram](#telegram-), [twitter](#twitter-)
+These are the data sources GrimoireLab supports: [askbot](#askbot-), [bugzilla](#bugzilla-), [bugzillarest](#bugzillarest-), [cocom](#cocom-), [colic](#colic-), [confluence](#confluence-), [crates](#crates-), [discourse](#discourse-), [dockerhub](#dockerhub-), [dockerdeps](#dockerdeps-), [dockersmells](#dockersmells-), [functest](#functest-), [gerrit](#gerrit-), [git](#git-), [github](#github-), [github2](#github2-), [gitlab](#gitlab-), [gitter](#gitter-), [google_hits](#google_hits-), [groupsio](#groupsio-), [hyperkitty](#hyperkitty-), [jenkins](#jenkins-), [jira](#jira-), [kitsune](#kitsune-), [mattermost](#mattermost-), [mbox](#mbox-), [mediawiki](#mediawiki-), [meetup](#meetup-), [mozillaclub](#mozillaclub-), [pagure](#pagure-), [phabricator](#phabricator-), [pipermail](#pipermail-), [puppetforge](#puppetforge-), [redmine](#redmine-), [remo](#remo-), [rocketchat](#rocketchat-), [rss](#rss-), [slack](#slack-), [stackexchange](#stackexchange-), [supybot](#supybot-), [telegram](#telegram-), [twitter](#twitter-)
 
 #### askbot [&uarr;](#supported-data-sources-)
 Questions and answers from Askbot site
@@ -1101,30 +1101,6 @@ Events from Mozillaclub
 [mozillaclub]
 raw_index = mozillaclub_raw
 enriched_index = mozillaclub_enriched
-```
-#### nntp [&uarr;](#supported-data-sources-)
-Articles from NNTP newsgroups
-
-The way to setup netnews is adding the server and the news channel to be monitored. In the example below,
-the `news.myproject.org` is the server name.
-- projects.json
-```
-{
-    "Chaoss": {
-        "nntp": [
-            "news.myproject.org mozilla.dev.tech.crypto.checkins",
-            "news.myproject.org mozilla.dev.tech.electrolysis",
-            "news.myproject.org mozilla.dev.tech.gfx",
-            "news.myproject.org mozilla.dev.tech.java"
-        ]
-    }
-}
-```
-- setup.cfg
-```
-[nntp]
-raw_index = nntp_raw
-enriched_index =  nntp_enriched
 ```
 #### pagure [&uarr;](#supported-data-sources-)
 Issues from Pagure repositories

@@ -33,8 +33,6 @@
                "params": ["--tag", "example-meetup", "example-meetup", "--max-items", "200", "--api-token", "XXXXX"]},
     "mozillaclub": {"repo": "https://example.com",
                     "params": ["https://example.com", "--archive-path", "/tmp/archives/"]},
-    "nntp": {"repo": "nntp.example.com example.dev.project-link",
-             "params": ["nntp.example.com", "example.dev.project-link", "--archive-path", "/tmp/archives/", "--category", "article"]},
     "phabricator": {"repo": "http://example.com",
                     "params": ["http://example.com", "--api-token", "XXXXX", "--category", "task", "--archive-path", "/tmp/archives/"]},
     "pipermail": {"repo": "https://example.com",

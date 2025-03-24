@@ -103,10 +103,6 @@
       "raw": ["mozillaclub-raw"],
       "enrich": ["mozillaclub", "affiliations"]
   },
-  "nntp": {
-      "raw": ["nntp-raw"],
-      "enrich": ["mbox", "kafka", "affiliations"]
-  },
   "phabricator": {
       "raw": ["phabricator-raw"],
       "enrich": ["phabricator", "maniphest", "affiliations"]

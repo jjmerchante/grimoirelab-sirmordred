@@ -171,58 +171,54 @@ class TestTasksManager(unittest.TestCase):
                           '1QHl2bjBhMslyFzR5XXPzMLdzzx7oeSKTbgR5PM8qp64/ohaibtm/public/values?alt=json'])
 
         backend = backends[23]
-        self.assertEqual(backend, 'nntp')
-        self.assertEqual(self.backends[backend], ['news.mozilla.org mozilla.dev.project-link'])
-
-        backend = backends[24]
         self.assertEqual(backend, 'phabricator')
         self.assertEqual(self.backends[backend], ['https://phabricator.wikimedia.org'])
 
-        backend = backends[25]
+        backend = backends[24]
         self.assertEqual(backend, 'pipermail')
         self.assertEqual(self.backends[backend], ['https://mail.gnome.org/archives/libart-hackers/'])
 
-        backend = backends[26]
+        backend = backends[25]
         self.assertEqual(backend, 'puppetforge')
         self.assertEqual(self.backends[backend], [''])
 
-        backend = backends[27]
+        backend = backends[26]
         self.assertEqual(backend, 'redmine')
         self.assertEqual(self.backends[backend], ['http://tracker.ceph.com/'])
 
-        backend = backends[28]
+        backend = backends[27]
         self.assertEqual(backend, 'remo')
         self.assertEqual(self.backends[backend], ['https://reps.mozilla.org'])
 
-        backend = backends[29]
+        backend = backends[28]
         self.assertEqual(backend, 'remo:activities')
         self.assertEqual(self.backends[backend], ['https://reps.mozilla.org'])
 
-        backend = backends[30]
+        backend = backends[29]
         self.assertEqual(backend, 'rss')
         self.assertEqual(self.backends[backend], ['https://blog.bitergia.com/feed/'])
 
-        backend = backends[31]
+        backend = backends[30]
         self.assertEqual(backend, 'slack')
         self.assertEqual(self.backends[backend], ['C7LSGB0AU'])
 
-        backend = backends[32]
+        backend = backends[31]
         self.assertEqual(backend, 'stackexchange')
         self.assertEqual(self.backends[backend],
                          ["https://stackoverflow.com/questions/tagged/ovirt",
                           "https://stackoverflow.com/questions/tagged/rdo",
                           "https://stackoverflow.com/questions/tagged/kibana"])
 
-        backend = backends[33]
+        backend = backends[32]
         self.assertEqual(backend, 'supybot')
         self.assertEqual(self.backends[backend],
                          ['openshift ~/.perceval/irc/percevalbot/logs/ChannelLogger/freenode/#openshift/'])
 
-        backend = backends[34]
+        backend = backends[33]
         self.assertEqual(backend, 'telegram')
         self.assertEqual(self.backends[backend], ['Mozilla_analytics'])
 
-        backend = backends[35]
+        backend = backends[34]
         self.assertEqual(backend, 'twitter')
         self.assertEqual(self.backends[backend], ['bitergia'])
 

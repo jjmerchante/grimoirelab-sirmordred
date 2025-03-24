@@ -51,9 +51,6 @@
       "mozillaclub": [
           "https://example.com"
       ],
-      "nntp": [
-          "nntp.example.com example.dev.project-link"
-      ],
       "phabricator": [
           "http://example.com"
       ],

@@ -162,7 +162,7 @@ class TestConfig(unittest.TestCase):
 
         expected = ['askbot', 'bugzilla', 'bugzillarest', 'confluence', 'discourse', 'dockerhub', 'functest',
                     'gerrit', 'git', 'gitlab', 'github', 'google_hits', 'groupsio', 'hyperkitty', 'jenkins', 'jira',
-                    'mbox', 'meetup', 'mediawiki', 'mozillaclub', 'nntp', 'phabricator', 'pipermail', 'puppetforge',
+                    'mbox', 'meetup', 'mediawiki', 'mozillaclub', 'phabricator', 'pipermail', 'puppetforge',
                     'redmine', 'remo', 'rss', 'stackexchange', 'slack', 'supybot', 'telegram', 'twitter']
         data_sources = config.get_data_sources()
 

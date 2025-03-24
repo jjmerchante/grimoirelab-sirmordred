@@ -161,14 +161,6 @@
   - name: Overview
     panel: panels/json/mailinglists.json
 - name: Mailing Lists
-  source: nntp
-  icon: default.png
-  index-patterns:
-  - panels/json/mbox-index-pattern.json
-  menu:
-  - name: Overview
-    panel: panels/json/mailinglists.json
-- name: Mailing Lists
   source: pipermail
   icon: default.png
   index-patterns:

@@ -262,50 +262,45 @@ class TestTaskProjects(unittest.TestCase):
 
         backend = backend_sections[23]
         repos = task.get_repos_by_backend_section(backend)
-        self.assertEqual(backend, 'nntp')
-        self.assertEqual(repos, ['news.mozilla.org mozilla.dev.project-link'])
-
-        backend = backend_sections[24]
-        repos = task.get_repos_by_backend_section(backend)
         self.assertEqual(backend, 'phabricator')
         self.assertEqual(repos, ['https://phabricator.wikimedia.org'])
 
-        backend = backend_sections[25]
+        backend = backend_sections[24]
         repos = task.get_repos_by_backend_section(backend)
         self.assertEqual(backend, 'pipermail')
         self.assertEqual(repos, ['https://mail.gnome.org/archives/libart-hackers/'])
 
-        backend = backend_sections[26]
+        backend = backend_sections[25]
         repos = task.get_repos_by_backend_section(backend)
         self.assertEqual(backend, 'puppetforge')
         self.assertEqual(repos, [''])
 
-        backend = backend_sections[27]
+        backend = backend_sections[26]
         repos = task.get_repos_by_backend_section(backend)
         self.assertEqual(backend, 'redmine')
         self.assertEqual(repos, ['http://tracker.ceph.com/'])
 
-        backend = backend_sections[28]
+        backend = backend_sections[27]
         repos = task.get_repos_by_backend_section(backend)
         self.assertEqual(backend, 'remo')
         self.assertEqual(repos, ['https://reps.mozilla.org'])
 
-        backend = backend_sections[29]
+        backend = backend_sections[28]
         repos = task.get_repos_by_backend_section(backend)
         self.assertEqual(backend, 'remo:activities')
         self.assertEqual(repos, ['https://reps.mozilla.org'])
 
-        backend = backend_sections[30]
+        backend = backend_sections[29]
         repos = task.get_repos_by_backend_section(backend)
         self.assertEqual(backend, 'rss')
         self.assertEqual(repos, ['https://blog.bitergia.com/feed/'])
 
-        backend = backend_sections[31]
+        backend = backend_sections[30]
         repos = task.get_repos_by_backend_section(backend)
         self.assertEqual(backend, 'slack')
         self.assertEqual(repos, ['C7LSGB0AU'])
 
-        backend = backend_sections[32]
+        backend = backend_sections[31]
         repos = task.get_repos_by_backend_section(backend)
         self.assertEqual(backend, 'stackexchange')
 
@@ -318,18 +313,18 @@ class TestTaskProjects(unittest.TestCase):
         expected_list.sort()
         self.assertEqual(repos, expected_list)
 
-        backend = backend_sections[33]
+        backend = backend_sections[32]
         repos = task.get_repos_by_backend_section(backend)
         self.assertEqual(backend, 'supybot')
         self.assertEqual(repos,
                          ['openshift ~/.perceval/irc/percevalbot/logs/ChannelLogger/freenode/#openshift/'])
 
-        backend = backend_sections[34]
+        backend = backend_sections[33]
         repos = task.get_repos_by_backend_section(backend)
         self.assertEqual(backend, 'telegram')
         self.assertEqual(repos, ['Mozilla_analytics'])
 
-        backend = backend_sections[35]
+        backend = backend_sections[34]
         repos = task.get_repos_by_backend_section(backend)
         self.assertEqual(backend, 'twitter')
         self.assertEqual(repos, ['bitergia'])

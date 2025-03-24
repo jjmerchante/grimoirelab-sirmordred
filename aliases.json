@@ -572,27 +572,6 @@
       }
     ]
   },
-  "nntp": {
-    "raw": [
-      {
-        "alias": "mozillaclub-raw"
-      }
-    ],
-    "enrich": [
-      {
-        "alias": "mbox"
-      },
-      {
-        "alias": "kafka"
-      },
-      {
-        "alias": "affiliations"
-      },
-      {
-        "alias": "all_enriched"
-      }
-    ]
-  },
   "pagure": {
     "raw": [
       {

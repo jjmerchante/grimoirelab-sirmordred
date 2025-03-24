@@ -54,9 +54,6 @@
       "mozillaclub": [
           "http://example.com/feed"
       ],
-      "nntp": [
-          "nntp.example.com example.dev.project-link"
-      ],
       "phabricator": [
           "http://example.com"
       ],
