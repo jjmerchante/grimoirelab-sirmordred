@@ -78,6 +78,7 @@ jobs:
         poetry run sortinghat-admin --config sortinghat.config.settings setup --no-interactive
         poetry run sortinghatd --dev --config sortinghat.config.settings &
         poetry run sortinghatw --config sortinghat.config.settings &
+        sleep 10
 
     - name: Lint with flake8
       run: |
